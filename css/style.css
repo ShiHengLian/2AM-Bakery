@@ -1,0 +1,241 @@
+:root{
+    --primary-color: rgb(155, 63, 112);
+    --secondary-color:  rgb(242, 201, 201);
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif; /*provisoriamente*/
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: var(--primary-color);
+    padding: 2vh 0;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    margin-left: 6px;
+    margin-bottom: 1px;
+    border: rgb(155, 63, 112);
+   
+}
+
+.logo img{
+    height: 100px;
+}
+
+.container h1{
+    color: #f2f2f2;
+    font-size: 3.5rem;
+}
+
+.container h2{
+    color: #f2f2f2;
+    font-size: 1.5rem;
+}
+
+
+/*Banner*/
+#banner{
+    background-image: url('../img/backeryCover.jpg');
+    background-size: cover;
+    background-position: cover;
+    height: 100vh;
+    box-shadow: inset 0 0 0 2000px rgba(124, 94, 118, 0.5);
+}
+
+
+.container{
+    max-width: 1200px;  
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+        /*propiedades de la fuente*/
+        text-align: center;
+        color: #f2f2f2;
+        /*font-family: fuente1, fuente2...*/
+    
+        /*posicion del contenedor banner_content*/
+        position: absolute;
+        top: 35vh;
+        left: 39vw;
+        z-index: 2;
+}
+
+.container h1{
+    color: #f2f2f2;
+    font-size: 3.5rem;
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding:10px 20px;
+    border-radius: 5px;
+    color: #f2f2f2;
+    font-size: 1em;
+    text-decoration: none;
+    transform: background-color 0.3s ease;
+    align-self: center;
+}
+
+.button:hover{
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+@keyframes pulse{
+    0%{
+        text-replace: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.button:hover{
+    animation: pulse 0.5s infinite alternate;
+}
+
+.galeria{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.productos{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+    text-align: center;
+}
+
+.producto-card{
+    background: #f2f2f2;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+}
+
+
+.producto-card img{
+   width: 100%;
+   height: 200px;
+   padding: 10px;
+   object-fit: cover;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.producto-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: var(--primary-color);
+    color: #f2f2f2;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.producto-card a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.recetas-card{
+    background: #f2f2f2;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+}
+
+
+.recetas-card img{
+   width: 100%;
+   height: 200px;
+   padding: 10px;
+   object-fit: cover;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.recetas-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: var(--primary-color);
+    color: #f2f2f2;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.recetas-card a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    height: 10vh;
+    /*Damos propiedad de flexible al padre*/
+    display: flex;
+    justify-content: center; /*centra horizontalmente los elementos*/
+    align-items: center; /*centra verticalemente los elementos*/
+    
+}
+
+.nav-footer ul{
+    list-style-type: none;
+    padding-right: 30px;
+    color: #f2f2f2; 
+    
+}
+
+.nav-footer ul li{
+    display: inline-block;
+    padding-right: 30px;
+    color: #f2f2f2;    
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 30px;
+    color: #f2f2f2;    
+}
+
+
+
+
+
+
+
