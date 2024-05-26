@@ -40,6 +40,9 @@ body{
     border-radius: 25px;
     justify-content: space-between;
     margin-bottom: 15px;
+
+    overflow: hidden;
+    overflow: scroll;
     
 }
 
