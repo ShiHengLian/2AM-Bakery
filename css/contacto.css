@@ -41,9 +41,8 @@ body{
     justify-content: space-between;
     margin-bottom: 15px;
 
-    /*overflow: hidden;
-    overflow: scroll;*/
-    
+    overflow: hidden;
+    overflow: scroll;
 }
 
 
